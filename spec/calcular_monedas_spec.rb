@@ -7,5 +7,9 @@ RSpec.describe "deberia devolver un array" do
         expect(array).to eq([5,5,5,2,2])
     end
 
-    
+    it "introducid un billete de 13 bs deberia devolver 5,5,2,1," do
+        billete = 13
+        array = calcular_monedas(billete)
+        expect(array).to eq([5,5,2,1])
+    end
 end
